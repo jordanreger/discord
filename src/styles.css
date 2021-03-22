@@ -1,0 +1,318 @@
+:root {
+  --main-bg-color: #36393f;
+  --header-bg-color: #202225;
+  --tertiary-bg-color: #2f3136;
+  --main-font-color: #dcddde;
+  --secondary-font-color: #72767d;
+  --tertiary-font-color: #7289da;
+  --white: #fff;
+  --black: #000;
+  --top-container-left: rgba(4, 4, 5, 0.25);
+  --top-container-right: rgba(4, 4, 5, 0.01);
+  --separator: hsla(0, 0%, 100%, 0.06);
+  --main-font-family: Open Sans;
+}
+
+.bg {
+  background-color: var(--header-bg-color);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 6rem;
+  height: 100%;
+  z-index: 0;
+}
+
+.bg-2 {
+  background-color: var(--main-bg-color);
+  position: fixed;
+  left: 6rem;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.bg-3 {
+  background-color: var(--tertiary-bg-color);
+  position: fixed;
+  left: 6rem;
+  top: 0;
+  width: 20rem;
+  height: 100%;
+  z-index: 3;
+}
+
+.top-container-left {
+  position: fixed;
+  left: 6rem;
+  top: 4rem;
+  width: 100%;
+  height: 1.5px;
+  z-index: 4;
+  background-color: var(--top-container-left);
+}
+
+.top-container-left-input {
+  position: fixed;
+  z-index: 5;
+  top: 0.75rem;
+  left: 6.85rem;
+  width: 12rem;
+  height: 2rem;
+}
+
+.top-container-left-input input {
+  width: 17.25rem;
+  height: 1.5rem;
+  background-color: #202125;
+  outline: none;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-family: var(--main-font-family);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--main-font-color);
+}
+
+.container-left-friends {
+  position: absolute;
+  z-index: 5;
+  top: 5rem;
+  left: 6.85rem;
+  height: 4rem;
+  width: 18.25rem;
+  line-height: 4rem;
+  background-color: rgba(79, 84, 92, 0.32);
+  border-radius: 5px;
+}
+
+.container-left-friends svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2rem;
+}
+
+.container-left-friends-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 4rem;
+  padding-left: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--white);
+  font-family: var(--main-font-family);
+}
+
+.top-container-right {
+  position: fixed;
+  left: 26rem;
+  top: 4rem;
+  width: 100%;
+  height: 1.5px;
+  z-index: 4;
+  background-color: var(--top-container-right);
+}
+
+.friends-icon-friends {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  background-color: var(--tertiary-font-color);
+  width: 4rem;
+  text-align: center;
+  height: 4rem;
+  border-radius: 15px;
+}
+
+.homeIcon {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-87.5%, -50%);
+}
+
+.selected-bar {
+  position: fixed;
+  left: 0;
+  top: 1.25rem;
+  border-radius: 0px 5px 5px 0px;
+  height: 40px;
+  width: 5px;
+  background-color: var(--white);
+}
+
+.separator {
+  height: 3px;
+  width: 32px;
+  position: fixed;
+  left: 1.7rem;
+  top: 5.5rem;
+  background-color: var(--separator);
+}
+
+.guild1-friends {
+  position: fixed;
+  left: 1rem;
+  top: 6.5rem;
+  background-image: url("https://avatars.githubusercontent.com/u/33134197?s=400&u=c96366788d85412814e2d14de749d11ad4545023&v=4");
+  background-size: 100%;
+  width: 4rem;
+  text-align: center;
+  height: 4rem;
+  border-radius: 90px;
+  transition: border-radius 200ms ease-out;
+}
+
+.guild1-selected-bar-friends {
+  position: fixed;
+  left: 0;
+  top: 7.5rem;
+  border-radius: 0px 5px 5px 0px;
+  height: 20px;
+  width: 5px;
+  background-color: var(--white);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 250ms ease-in-out;
+}
+
+.guild1-friends:hover {
+  border-radius: 15px;
+  transition: border-radius 200ms ease-out;
+}
+
+.guild1-friends:hover + .guild1-selected-bar-friends {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 250ms ease-in-out;
+}
+
+.guild1-friends {
+  position: fixed;
+  left: 1rem;
+  top: 6.5rem;
+  background-image: url("https://avatars.githubusercontent.com/u/33134197?s=400&u=c96366788d85412814e2d14de749d11ad4545023&v=4");
+  background-size: 100%;
+  width: 4rem;
+  text-align: center;
+  height: 4rem;
+  border-radius: 90px;
+  transition: border-radius 200ms ease-out;
+}
+
+/* guild1 */
+
+.friends-icon-jordanreger {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  background-color: var(--tertiary-bg-color);
+  width: 4rem;
+  text-align: center;
+  height: 4rem;
+  border-radius: 90px;
+}
+
+.selected-bar-jordanreger {
+  position: fixed;
+  left: 0;
+  top: 2.15rem;
+  border-radius: 0px 5px 5px 0px;
+  height: 20px;
+  width: 5px;
+  background-color: var(--white);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 250ms ease-in-out;
+}
+
+.friends-icon-jordanreger:hover + .selected-bar-jordanreger {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 250ms ease-in-out;
+}
+
+.friends-icon-jordanreger:hover {
+  border-radius: 15px;
+  transition: border-radius 200ms ease-out, background-color 200ms ease-in-out;
+  background-color: var(--tertiary-font-color);
+}
+
+.friends-icon-jordanreger:hover + .guild1-selected-bar-friends {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 250ms ease-in-out;
+}
+
+.homeIcon {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-87.5%, -50%);
+}
+
+.guild1-selected-bar-jordanreger {
+  position: fixed;
+  left: 0;
+  top: 7.5rem;
+  border-radius: 0px 5px 5px 0px;
+  height: 20px;
+  width: 5px;
+  background-color: var(--white);
+  visibility: shown;
+  opacity: 0;
+  transition: visibility 0s, opacity 250ms ease-in-out;
+}
+
+.guild1-friends:hover {
+  border-radius: 15px;
+  transition: border-radius 200ms ease-out;
+}
+
+.guild1-friends:hover + .guild1-selected-bar-friends {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 250ms ease-in-out;
+}
+
+.guild1-jordanreger {
+  position: fixed;
+  left: 1rem;
+  top: 6.5rem;
+  background-image: url("https://avatars.githubusercontent.com/u/33134197?s=400&u=c96366788d85412814e2d14de749d11ad4545023&v=4");
+  background-size: 100%;
+  width: 4rem;
+  text-align: center;
+  height: 4rem;
+  border-radius: 15px;
+  transition: border-radius 200ms ease-out;
+}
+
+.guild1-selected-bar-jordanreger {
+  position: fixed;
+  left: 0;
+  top: 6.75rem;
+  border-radius: 0px 5px 5px 0px;
+  height: 40px;
+  width: 5px;
+  background-color: var(--white);
+  visibility: visible;
+  opacity: 1;
+}
+
+.guild1-friends {
+  position: fixed;
+  left: 1rem;
+  top: 6.5rem;
+  background-image: url("https://avatars.githubusercontent.com/u/33134197?s=400&u=c96366788d85412814e2d14de749d11ad4545023&v=4");
+  background-size: 100%;
+  width: 4rem;
+  text-align: center;
+  height: 4rem;
+  border-radius: 90px;
+  transition: border-radius 200ms ease-out;
+}
