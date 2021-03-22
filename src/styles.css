@@ -237,13 +237,6 @@
   border-radius: 15px;
 }
 
-.homeIcon {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .selected-bar {
   position: fixed;
   left: 0;
