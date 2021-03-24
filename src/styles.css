@@ -226,6 +226,170 @@
   background-color: var(--top-container-right);
 }
 
+.at-icon-top-container-right {
+  position: fixed;
+  top: 1rem;
+  left: 27.25rem;
+}
+
+.username-top-container-right {
+  position: fixed;
+  top: 1rem;
+  left: 30.25rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--white);
+  font-family: var(--main-font-family);
+}
+
+.status {
+  position: fixed;
+  top: 1.5rem;
+  left: 38.25rem;
+  width: 0.9rem;
+  height: 0.9rem;
+  background-color: rgba(67, 181, 129, 1);
+  border-radius: 90px;
+}
+
+.voicecallicon {
+  position: fixed;
+  top: 1rem;
+  right: 31.25rem;
+}
+
+.videocallicon {
+  position: fixed;
+  top: 1rem;
+  right: 28.25rem;
+}
+
+.pinnedmessagesicon {
+  position: fixed;
+  top: 1rem;
+  right: 25.25rem;
+}
+
+.addfriendsicon {
+  position: fixed;
+  top: 1rem;
+  right: 22.25rem;
+}
+
+.top-container-right-input {
+  position: fixed;
+  z-index: 5;
+  top: 1rem;
+  right: 7.25rem;
+  width: 13.75rem;
+  height: 2rem;
+}
+
+.inboxicon {
+  position: fixed;
+  top: 1rem;
+  right: 4.25rem;
+}
+
+.helpicon {
+  position: fixed;
+  top: 1rem;
+  right: 1.25rem;
+}
+
+.bottom-box {
+  position: fixed;
+  left: 6rem;
+  bottom: 0;
+  height: 4.25rem;
+  width: 20rem;
+  background-color: #26272c;
+}
+
+.bottom-box-pfp {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 90px;
+  position: relative;
+  left: 1rem;
+  top: 0.5rem;
+}
+
+.bottom-box-username {
+  position: absolute;
+  left: 4.5rem;
+  top: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--white);
+  font-family: var(--main-font-family);
+}
+
+.bottom-box-discriminator {
+  position: absolute;
+  left: 4.5rem;
+  bottom: 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #72767d;
+  font-family: var(--main-font-family);
+}
+
+.bottom-box-mic {
+  position: absolute;
+  right: 6.5rem;
+  top: 1.25rem;
+}
+
+.bottom-box-headphones {
+  position: absolute;
+  right: 3.75rem;
+  top: 1.25rem;
+}
+
+.bottom-box-settings {
+  position: absolute;
+  right: 1rem;
+  top: 1.25rem;
+}
+
+.main-text-input {
+  position: fixed;
+  bottom: 2rem;
+  left: 27rem;
+  width: 100%;
+}
+
+#main-text-input {
+  position: relative;
+  height: 3rem;
+  width: 77%;
+  border-radius: 5px;
+  background-color: #40444b;
+  border: none;
+  outline: none;
+}
+
+.top-container-right-input input {
+  width: 12.25rem;
+  height: 1rem;
+  background-color: #202125;
+  outline: none;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-family: var(--main-font-family);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--main-font-color);
+}
+
+.search-icon {
+  position: absolute;
+  right: 1rem;
+  top: 0.4rem;
+}
+
 .friends-icon-friends {
   position: fixed;
   left: 1rem;
