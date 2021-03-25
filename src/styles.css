@@ -515,10 +515,10 @@
 }
 
 .homeIcon {
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-87.5%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .guild1-selected-bar-jordanreger {
